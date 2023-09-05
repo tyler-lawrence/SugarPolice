@@ -14,6 +14,17 @@
 		5BF7533D2AA1036700FF7A53 /* SugarPoliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7533C2AA1036700FF7A53 /* SugarPoliceTests.swift */; };
 		5BF753472AA1036700FF7A53 /* SugarPoliceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF753462AA1036700FF7A53 /* SugarPoliceUITests.swift */; };
 		5BF753492AA1036700FF7A53 /* SugarPoliceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF753482AA1036700FF7A53 /* SugarPoliceUITestsLaunchTests.swift */; };
+		5BF753562AA1082F00FF7A53 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF753552AA1082F00FF7A53 /* AudioPlayer.swift */; };
+		5BF7535A2AA108AA00FF7A53 /* police-6007.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BF753592AA108AA00FF7A53 /* police-6007.mp3 */; };
+		5BF753622AA10BC900FF7A53 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF753612AA10BC900FF7A53 /* WidgetKit.framework */; };
+		5BF753642AA10BC900FF7A53 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF753632AA10BC900FF7A53 /* SwiftUI.framework */; };
+		5BF753672AA10BCA00FF7A53 /* SirenWIdgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF753662AA10BCA00FF7A53 /* SirenWIdgetBundle.swift */; };
+		5BF753692AA10BCA00FF7A53 /* SirenWIdget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF753682AA10BCA00FF7A53 /* SirenWIdget.swift */; };
+		5BF7536C2AA10BCB00FF7A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF7536B2AA10BCB00FF7A53 /* Assets.xcassets */; };
+		5BF753722AA10BCB00FF7A53 /* SirenWIdgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5BF7535F2AA10BC900FF7A53 /* SirenWIdgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5BF753782AA270B400FF7A53 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF753772AA270B400FF7A53 /* SetupView.swift */; };
+		5BF7537A2AA3B94C00FF7A53 /* SirenWIdget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7537D2AA3B94C00FF7A53 /* SirenWIdget.intentdefinition */; };
+		5BF7537B2AA3B94C00FF7A53 /* SirenWIdget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7537D2AA3B94C00FF7A53 /* SirenWIdget.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +42,32 @@
 			remoteGlobalIDString = 5BF753262AA1036600FF7A53;
 			remoteInfo = SugarPolice;
 		};
+		5BF753702AA10BCB00FF7A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BF7531F2AA1036600FF7A53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BF7535E2AA10BC900FF7A53;
+			remoteInfo = SirenWIdgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5BF753762AA10BCB00FF7A53 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5BF753722AA10BCB00FF7A53 /* SirenWIdgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5B1BB64E2AA7EA7F001C68A3 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		5B1BB6592AA7EA80001C68A3 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		5BF753272AA1036600FF7A53 /* SugarPolice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarPolice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPoliceApp.swift; sourceTree = "<group>"; };
 		5BF7532C2AA1036600FF7A53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +79,18 @@
 		5BF753422AA1036700FF7A53 /* SugarPoliceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarPoliceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF753462AA1036700FF7A53 /* SugarPoliceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPoliceUITests.swift; sourceTree = "<group>"; };
 		5BF753482AA1036700FF7A53 /* SugarPoliceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPoliceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BF753552AA1082F00FF7A53 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		5BF753592AA108AA00FF7A53 /* police-6007.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "police-6007.mp3"; sourceTree = "<group>"; };
+		5BF7535F2AA10BC900FF7A53 /* SirenWIdgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SirenWIdgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF753612AA10BC900FF7A53 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5BF753632AA10BC900FF7A53 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5BF753662AA10BCA00FF7A53 /* SirenWIdgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenWIdgetBundle.swift; sourceTree = "<group>"; };
+		5BF753682AA10BCA00FF7A53 /* SirenWIdget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenWIdget.swift; sourceTree = "<group>"; };
+		5BF7536B2AA10BCB00FF7A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BF7536D2AA10BCB00FF7A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF753772AA270B400FF7A53 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		5BF753792AA3B92E00FF7A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5BF7537E2AA3B94E00FF7A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/SirenWIdget.intentdefinition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +115,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BF7535C2AA10BC900FF7A53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF753642AA10BC900FF7A53 /* SwiftUI.framework in Frameworks */,
+				5BF753622AA10BC900FF7A53 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +133,8 @@
 				5BF753292AA1036600FF7A53 /* SugarPolice */,
 				5BF7533B2AA1036700FF7A53 /* SugarPoliceTests */,
 				5BF753452AA1036700FF7A53 /* SugarPoliceUITests */,
+				5BF753652AA10BCA00FF7A53 /* SirenWIdget */,
+				5BF753602AA10BC900FF7A53 /* Frameworks */,
 				5BF753282AA1036600FF7A53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +145,7 @@
 				5BF753272AA1036600FF7A53 /* SugarPolice.app */,
 				5BF753382AA1036700FF7A53 /* SugarPoliceTests.xctest */,
 				5BF753422AA1036700FF7A53 /* SugarPoliceUITests.xctest */,
+				5BF7535F2AA10BC900FF7A53 /* SirenWIdgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,8 +153,12 @@
 		5BF753292AA1036600FF7A53 /* SugarPolice */ = {
 			isa = PBXGroup;
 			children = (
+				5BF753792AA3B92E00FF7A53 /* Info.plist */,
 				5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */,
 				5BF7532C2AA1036600FF7A53 /* ContentView.swift */,
+				5BF753772AA270B400FF7A53 /* SetupView.swift */,
+				5BF753552AA1082F00FF7A53 /* AudioPlayer.swift */,
+				5BF753592AA108AA00FF7A53 /* police-6007.mp3 */,
 				5BF7532E2AA1036700FF7A53 /* Assets.xcassets */,
 				5BF753302AA1036700FF7A53 /* SugarPolice.entitlements */,
 				5BF753312AA1036700FF7A53 /* Preview Content */,
@@ -129,6 +191,29 @@
 			path = SugarPoliceUITests;
 			sourceTree = "<group>";
 		};
+		5BF753602AA10BC900FF7A53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BF753612AA10BC900FF7A53 /* WidgetKit.framework */,
+				5BF753632AA10BC900FF7A53 /* SwiftUI.framework */,
+				5B1BB64E2AA7EA7F001C68A3 /* Intents.framework */,
+				5B1BB6592AA7EA80001C68A3 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BF753652AA10BCA00FF7A53 /* SirenWIdget */ = {
+			isa = PBXGroup;
+			children = (
+				5BF753662AA10BCA00FF7A53 /* SirenWIdgetBundle.swift */,
+				5BF753682AA10BCA00FF7A53 /* SirenWIdget.swift */,
+				5BF7537D2AA3B94C00FF7A53 /* SirenWIdget.intentdefinition */,
+				5BF7536B2AA10BCB00FF7A53 /* Assets.xcassets */,
+				5BF7536D2AA10BCB00FF7A53 /* Info.plist */,
+			);
+			path = SirenWIdget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +224,12 @@
 				5BF753232AA1036600FF7A53 /* Sources */,
 				5BF753242AA1036600FF7A53 /* Frameworks */,
 				5BF753252AA1036600FF7A53 /* Resources */,
+				5BF753762AA10BCB00FF7A53 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5BF753712AA10BCB00FF7A53 /* PBXTargetDependency */,
 			);
 			name = SugarPolice;
 			productName = SugarPolice;
@@ -185,6 +272,23 @@
 			productReference = 5BF753422AA1036700FF7A53 /* SugarPoliceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5BF7535E2AA10BC900FF7A53 /* SirenWIdgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF753732AA10BCB00FF7A53 /* Build configuration list for PBXNativeTarget "SirenWIdgetExtension" */;
+			buildPhases = (
+				5BF7535B2AA10BC900FF7A53 /* Sources */,
+				5BF7535C2AA10BC900FF7A53 /* Frameworks */,
+				5BF7535D2AA10BC900FF7A53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SirenWIdgetExtension;
+			productName = SirenWIdgetExtension;
+			productReference = 5BF7535F2AA10BC900FF7A53 /* SirenWIdgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +310,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 5BF753262AA1036600FF7A53;
 					};
+					5BF7535E2AA10BC900FF7A53 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 5BF753222AA1036600FF7A53 /* Build configuration list for PBXProject "SugarPolice" */;
@@ -224,6 +331,7 @@
 				5BF753262AA1036600FF7A53 /* SugarPolice */,
 				5BF753372AA1036700FF7A53 /* SugarPoliceTests */,
 				5BF753412AA1036700FF7A53 /* SugarPoliceUITests */,
+				5BF7535E2AA10BC900FF7A53 /* SirenWIdgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF7535A2AA108AA00FF7A53 /* police-6007.mp3 in Resources */,
 				5BF753332AA1036700FF7A53 /* Preview Assets.xcassets in Resources */,
 				5BF7532F2AA1036700FF7A53 /* Assets.xcassets in Resources */,
 			);
@@ -252,6 +361,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BF7535D2AA10BC900FF7A53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF7536C2AA10BCB00FF7A53 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,6 +378,9 @@
 			files = (
 				5BF7532D2AA1036600FF7A53 /* ContentView.swift in Sources */,
 				5BF7532B2AA1036600FF7A53 /* SugarPoliceApp.swift in Sources */,
+				5BF7537A2AA3B94C00FF7A53 /* SirenWIdget.intentdefinition in Sources */,
+				5BF753782AA270B400FF7A53 /* SetupView.swift in Sources */,
+				5BF753562AA1082F00FF7A53 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +401,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BF7535B2AA10BC900FF7A53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF753672AA10BCA00FF7A53 /* SirenWIdgetBundle.swift in Sources */,
+				5BF753692AA10BCA00FF7A53 /* SirenWIdget.swift in Sources */,
+				5BF7537B2AA3B94C00FF7A53 /* SirenWIdget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -294,7 +424,23 @@
 			target = 5BF753262AA1036600FF7A53 /* SugarPolice */;
 			targetProxy = 5BF753432AA1036700FF7A53 /* PBXContainerItemProxy */;
 		};
+		5BF753712AA10BCB00FF7A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BF7535E2AA10BC900FF7A53 /* SirenWIdgetExtension */;
+			targetProxy = 5BF753702AA10BCB00FF7A53 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BF7537D2AA3B94C00FF7A53 /* SirenWIdget.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF7537E2AA3B94E00FF7A53 /* Base */,
+			);
+			name = SirenWIdget.intentdefinition;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5BF7534A2AA1036700FF7A53 /* Debug */ = {
@@ -409,16 +555,19 @@
 		5BF7534D2AA1036700FF7A53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SugarPolice/SugarPolice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SugarPolice/Preview Content\"";
 				DEVELOPMENT_TEAM = 2PF4YUG536;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SugarPolice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Infraction Siren";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -427,8 +576,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -447,16 +596,19 @@
 		5BF7534E2AA1036700FF7A53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SugarPolice/SugarPolice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SugarPolice/Preview Content\"";
 				DEVELOPMENT_TEAM = 2PF4YUG536;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SugarPolice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Infraction Siren";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -465,8 +617,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -572,6 +724,65 @@
 			};
 			name = Release;
 		};
+		5BF753742AA10BCB00FF7A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PF4YUG536;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SirenWIdget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SirenWIdget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.SugarPolice.SirenWIdget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BF753752AA10BCB00FF7A53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PF4YUG536;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SirenWIdget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SirenWIdget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.SugarPolice.SirenWIdget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,6 +818,15 @@
 			buildConfigurations = (
 				5BF753532AA1036700FF7A53 /* Debug */,
 				5BF753542AA1036700FF7A53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF753732AA10BCB00FF7A53 /* Build configuration list for PBXNativeTarget "SirenWIdgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF753742AA10BCB00FF7A53 /* Debug */,
+				5BF753752AA10BCB00FF7A53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

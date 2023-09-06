@@ -45,8 +45,9 @@ class SoundTheAlarmHandler: NSObject, SoundTheAlarmIntentHandling {
     }
     
     func addInfraction(crime: String) {
-        let userDefaults = UserDefaults.standard
-        userDefaults.set(crime, forKey: "message")
+        if let userDefaults = UserDefaults(suiteName: "group.com.academy.SugarPolice") {
+            userDefaults.set(crime, forKey: "message")
+        }
     }
     
     private func donateIntent() {

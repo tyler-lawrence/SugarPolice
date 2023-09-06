@@ -102,6 +102,7 @@
 		5B1BB6A72AA7ED86001C68A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5B1BB6A92AA7ED86001C68A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B1BB6B62AA7EDC8001C68A3 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		5B1BB6C02AA818F2001C68A3 /* SoundTheAlarmIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundTheAlarmIntent.entitlements; sourceTree = "<group>"; };
 		5BF753272AA1036600FF7A53 /* SugarPolice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarPolice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPoliceApp.swift; sourceTree = "<group>"; };
 		5BF7532C2AA1036600FF7A53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 		5B1BB6992AA7ED85001C68A3 /* SoundTheAlarmIntent */ = {
 			isa = PBXGroup;
 			children = (
+				5B1BB6C02AA818F2001C68A3 /* SoundTheAlarmIntent.entitlements */,
 				5B1BB69A2AA7ED85001C68A3 /* IntentHandler.swift */,
 				5B1BB69C2AA7ED85001C68A3 /* Info.plist */,
 			);
@@ -671,6 +673,7 @@
 		5B1BB6B42AA7ED86001C68A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SoundTheAlarmIntent/SoundTheAlarmIntent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2PF4YUG536;
@@ -698,6 +701,7 @@
 		5B1BB6B52AA7ED86001C68A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SoundTheAlarmIntent/SoundTheAlarmIntent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2PF4YUG536;

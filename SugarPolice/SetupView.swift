@@ -9,9 +9,9 @@ import SwiftUI
 
 struct SetupView: View {
     @Environment(\.dismiss) var dismiss
-    @AppStorage("message") private var message: String = ""
+    @State private var message: String = ""
     @State var previousMessages = [String]()
-    let defaults = UserDefaults.standard
+    let defaults = UserDefaults(suiteName: "group.com.academy.SugarPolice") ?? UserDefaults.standard
     
     var body: some View {
         VStack {
@@ -24,7 +24,7 @@ struct SetupView: View {
                 }
             }
             Button("Sound the alarm") {
-                defaults.set(message, forKey: "message")
+                updateMessage(message)
                 addMessage(message)
                 dismiss()
                 startBackgroundMusic(sound: "police-6007", type: "mp3")
@@ -36,6 +36,10 @@ struct SetupView: View {
             stopBackgroundMusic()
             previousMessages = defaults.array(forKey: "previousMessages") as? [String] ?? [String]()
         }
+    }
+    
+    func updateMessage(_ message: String) {
+        defaults.set(message, forKey: "message")
     }
     
     func addMessage(_ message: String) {

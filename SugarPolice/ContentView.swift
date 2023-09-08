@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var colorToggle = false
-    @AppStorage("message") private var message: String = "Infraction"
+    @AppStorage("message", store: UserDefaults(suiteName: "group.com.academy.SugarPolice")) private var message: String = "Infraction"
     @State var showingSheet = false
     
     var backgroundGradient: LinearGradient {

@@ -19,6 +19,7 @@
 		5B1BB6B82AA7F032001C68A3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BB6B62AA7EDC8001C68A3 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (project_codegen, ); }; };
 		5B1BB6BA2AA7F15C001C68A3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BB69A2AA7ED85001C68A3 /* IntentHandler.swift */; };
 		5B212DB72AC87060009A3D53 /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */; };
+		5B4921AB2ACDD6F700C005A5 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B4921AA2ACDD6F700C005A5 /* AppIntentVocabulary.plist */; };
 		5BB4047D2ACB459000C2468F /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19B17F2AB13E5900319B59 /* MessageManager.swift */; };
 		5BF7532B2AA1036600FF7A53 /* SugarPoliceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */; };
 		5BF7532D2AA1036600FF7A53 /* SirenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532C2AA1036600FF7A53 /* SirenView.swift */; };
@@ -108,6 +109,7 @@
 		5B1BB6B62AA7EDC8001C68A3 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		5B1BB6C02AA818F2001C68A3 /* SoundTheAlarmIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundTheAlarmIntent.entitlements; sourceTree = "<group>"; };
 		5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
+		5B4921AA2ACDD6F700C005A5 /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		5BF753272AA1036600FF7A53 /* SugarPolice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarPolice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPoliceApp.swift; sourceTree = "<group>"; };
 		5BF7532C2AA1036600FF7A53 /* SirenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenView.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				5BF753792AA3B92E00FF7A53 /* Info.plist */,
+				5B4921AA2ACDD6F700C005A5 /* AppIntentVocabulary.plist */,
 				5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */,
 				5BF7532C2AA1036600FF7A53 /* SirenView.swift */,
 				5BF753772AA270B400FF7A53 /* SetupView.swift */,
@@ -485,6 +488,7 @@
 			files = (
 				5BF7535A2AA108AA00FF7A53 /* siren.mp3 in Resources */,
 				5BF753332AA1036700FF7A53 /* Preview Assets.xcassets in Resources */,
+				5B4921AB2ACDD6F700C005A5 /* AppIntentVocabulary.plist in Resources */,
 				5BF7532F2AA1036700FF7A53 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -854,7 +858,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SugarPolice/SugarPolice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"SugarPolice/Preview Content\"";
 				DEVELOPMENT_TEAM = 2PF4YUG536;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -895,7 +899,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SugarPolice/SugarPolice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"SugarPolice/Preview Content\"";
 				DEVELOPMENT_TEAM = 2PF4YUG536;
 				ENABLE_HARDENED_RUNTIME = YES;

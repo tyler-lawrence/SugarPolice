@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct SetupView: View {
+    
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var messageManager: MessageManager
     @State private var message: String = ""
-    @State var previousMessages = [String]()
-    let defaults = UserDefaults(suiteName: "group.com.academy.SugarPolice") ?? UserDefaults.standard
     
     var body: some View {
         VStack {
@@ -19,34 +19,22 @@ struct SetupView: View {
                 .font(.largeTitle)
                 .padding()
             Picker("Previous infractions", selection: $message) {
-                ForEach(previousMessages, id:\.self) { m in
+                ForEach(messageManager.messages, id:\.self) { m in
                     Text(m)
                 }
             }
             Button("Sound the alarm") {
-                updateMessage(message)
-                addMessage(message)
+                messageManager.updateCurrentMessage(message)
+                messageManager.hideSheet()
                 dismiss()
-                startBackgroundMusic(sound: "police-6007", type: "mp3")
             }
             .buttonStyle(.borderedProminent)
+            .disabled(message.isEmpty)
             
         }
         .onAppear{
-            stopBackgroundMusic()
-            previousMessages = defaults.array(forKey: "previousMessages") as? [String] ?? [String]()
-        }
-    }
-    
-    func updateMessage(_ message: String) {
-        defaults.set(message, forKey: "message")
-    }
-    
-    func addMessage(_ message: String) {
-        var priorMessages = defaults.array(forKey: "previousMessages") as? [String] ?? [String]()
-        if !priorMessages.contains(message) {
-            priorMessages.append(message)
-            defaults.set(priorMessages, forKey: "previousMessages")
+            stopBackgroundSound()
+            messageManager.loadMessages()
         }
     }
 }
@@ -54,5 +42,6 @@ struct SetupView: View {
 struct SetupView_Previews: PreviewProvider {
     static var previews: some View {
         SetupView()
+            .environmentObject(MessageManager.testMessageManager)
     }
 }

@@ -29,9 +29,13 @@ class IntentHandler: INExtension {
 
 class SoundTheAlarmHandler: NSObject, SoundTheAlarmIntentHandling {
     
+    let messageManager = MessageManager.shared
+    
     func handle(intent: SoundTheAlarmIntent, completion: @escaping (SoundTheAlarmIntentResponse) -> Void) {
+    
        if let crime = intent.crime {
-           addInfraction(crime: crime)
+           messageManager.updateCurrentMessage(crime)
+           messageManager.hideSheet()
            completion(SoundTheAlarmIntentResponse.success(crime: crime))
        }
     }
@@ -43,13 +47,7 @@ class SoundTheAlarmHandler: NSObject, SoundTheAlarmIntentHandling {
         }
         completion(INStringResolutionResult.success(with: title))
     }
-    
-    func addInfraction(crime: String) {
-        if let userDefaults = UserDefaults(suiteName: "group.com.academy.SugarPolice") {
-            userDefaults.set(crime, forKey: "message")
-        }
-    }
-    
+
     private func donateIntent() {
         let intent = SoundTheAlarmIntent()
         intent.suggestedInvocationPhrase = "We have an infraction"

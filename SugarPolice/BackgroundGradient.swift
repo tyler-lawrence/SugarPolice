@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct BackgroundGradient: View {
+    
     @State var colorToggle = false
+    
     var backgroundGradient: LinearGradient {
         var g: LinearGradient
         if colorToggle {

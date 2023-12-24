@@ -36,12 +36,13 @@ struct SetupView: View {
             stopBackgroundSound()
             messageManager.loadMessages()
         }
+        .onDisappear{
+            startBackgroundSound()
+        }
     }
 }
 
-struct SetupView_Previews: PreviewProvider {
-    static var previews: some View {
-        SetupView()
-            .environmentObject(MessageManager.testMessageManager)
-    }
+#Preview{
+    SetupView()
+        .environmentObject(MessageManager())
 }

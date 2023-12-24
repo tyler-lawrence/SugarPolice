@@ -9,11 +9,11 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>5c97WK</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>22G90</string>
+	<string>23B81</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>14E300c</string>
+	<string>15C65</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>14.3.1</string>
+	<string>15.1</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -25,6 +25,8 @@
 			<string>Open app with custom message</string>
 			<key>INIntentDescriptionID</key>
 			<string>QPu1tZ</string>
+			<key>INIntentEligibleForWidgets</key>
+			<true/>
 			<key>INIntentLastParameterTag</key>
 			<integer>1</integer>
 			<key>INIntentManagedParameterCombinations</key>

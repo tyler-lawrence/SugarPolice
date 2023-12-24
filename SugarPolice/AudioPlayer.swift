@@ -18,7 +18,7 @@ var backgroundAudioPlayer: AVAudioPlayer?
 /// - Returns:
 ///     - plays music if possible
 
-func startBackgroundSound(sound: String, type: String) {
+func startBackgroundSound(sound: String = "siren", type: String = "mp3") {
     if let bundle = Bundle.main.path(forResource: sound, ofType: type) {
         let backgroundSound = NSURL(fileURLWithPath: bundle)
         do {

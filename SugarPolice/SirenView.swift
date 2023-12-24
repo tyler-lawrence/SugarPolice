@@ -22,7 +22,7 @@ struct SirenView: View {
             messageManager.showingSheet = true
         }
         .onAppear {
-            startBackgroundSound(sound: "siren", type: "mp3")
+            startBackgroundSound()
         }
         .sheet(isPresented: $messageManager.showingSheet){
             SetupView()
@@ -35,6 +35,6 @@ struct SirenView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         SirenView()
-            .environmentObject(MessageManager.testMessageManager)
+            .environmentObject(MessageManager())
     }
 }

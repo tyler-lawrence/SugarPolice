@@ -9,8 +9,10 @@ import SwiftUI
 
 @main
 struct SugarPoliceApp: App {
-    @StateObject var messageManager = MessageManager.shared
+    
+    @StateObject var messageManager = MessageManager()
     @Environment(\.scenePhase) var scenePhase
+    
     var body: some Scene {
         WindowGroup {
             SirenView()

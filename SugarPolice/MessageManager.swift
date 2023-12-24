@@ -25,13 +25,11 @@ class MessageManager: ObservableObject {
     @AppStorage(currentMessageKey, store: UserDefaults(suiteName: suiteName)) var currentMessage: String = ""
     @AppStorage(showingSheetKey, store: UserDefaults(suiteName: suiteName)) var showingSheet: Bool = false
     
-    
     // MARK: - Initialization
-    private init(){
+    init(){
         loadMessages()
     }
 
-    
     // MARK: - Methods
     func hideSheet() {
         guard let defaults = defaults else { return }
@@ -59,14 +57,14 @@ class MessageManager: ObservableObject {
     
     func loadMessages()  {
         guard let defaults = defaults else { return }
-        let priorMessages: [String]? = defaults.array(forKey: MessageManager.previousMessagesKey) as? [String]
-        self.messages = priorMessages ?? [String]()
+        let priorMessages: [String] = defaults.array(forKey: MessageManager.previousMessagesKey) as? [String] ?? [String]()
+        self.messages = priorMessages
     }
     
 }
 
-#if DEBUG
-extension MessageManager {
-    static let testMessageManager = MessageManager()
-}
-#endif
+//#if DEBUG
+//extension MessageManager {
+//    static let testMessageManager = MessageManager()
+//}
+//#endif

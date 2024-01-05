@@ -13,15 +13,15 @@ struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), configuration: ConfigurationIntent())
     }
-
+    
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
-
+    
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-
+        
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
@@ -29,7 +29,7 @@ struct Provider: IntentTimelineProvider {
             let entry = SimpleEntry(date: entryDate, configuration: configuration)
             entries.append(entry)
         }
-
+        
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
@@ -42,15 +42,25 @@ struct SimpleEntry: TimelineEntry {
 
 struct SirenWIdgetEntryView : View {
     var entry: Provider.Entry
-
+    
     var body: some View {
-        Text("Sound the Alarm!")
+        VStack(alignment: .center) {
+            Text("SOUND")
+            Image("siren-no-background")
+                .resizable()
+                .scaledToFit()
+            Text("THE ALARM!")
+                .multilineTextAlignment(.center)
+        }
+        .containerBackground(for: .widget) {
+            RadialGradient(colors: [.white, .blue], center: .center, startRadius: 1.0, endRadius: 100.0)
+        }
     }
 }
 
 struct SirenWIdget: Widget {
     let kind: String = "SirenWIdget"
-
+    
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             SirenWIdgetEntryView(entry: entry)

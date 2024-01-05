@@ -19,6 +19,7 @@
 		5B1BB6B82AA7F032001C68A3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BB6B62AA7EDC8001C68A3 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (project_codegen, ); }; };
 		5B1BB6BA2AA7F15C001C68A3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BB69A2AA7ED85001C68A3 /* IntentHandler.swift */; };
 		5B212DB72AC87060009A3D53 /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */; };
+		5B460B3D2B48A6F70030F76A /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */; };
 		5B4921AB2ACDD6F700C005A5 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B4921AA2ACDD6F700C005A5 /* AppIntentVocabulary.plist */; };
 		5BB4047D2ACB459000C2468F /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19B17F2AB13E5900319B59 /* MessageManager.swift */; };
 		5BF7532B2AA1036600FF7A53 /* SugarPoliceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */; };
@@ -574,6 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF753672AA10BCA00FF7A53 /* SirenWIdgetBundle.swift in Sources */,
+				5B460B3D2B48A6F70030F76A /* BackgroundGradient.swift in Sources */,
 				5BF753692AA10BCA00FF7A53 /* SirenWIdget.swift in Sources */,
 				5BF7537B2AA3B94C00FF7A53 /* SirenWIdget.intentdefinition in Sources */,
 			);
@@ -639,7 +641,7 @@
 				INFOPLIST_FILE = SoundTheAlarmIntentUI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SoundTheAlarmIntentUI;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,7 +668,7 @@
 				INFOPLIST_FILE = SoundTheAlarmIntentUI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SoundTheAlarmIntentUI;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,7 +697,7 @@
 				INFOPLIST_FILE = SoundTheAlarmIntent/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SoundTheAlarmIntent;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -723,7 +725,7 @@
 				INFOPLIST_FILE = SoundTheAlarmIntent/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SoundTheAlarmIntent;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -876,7 +878,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -917,7 +919,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -1034,7 +1036,7 @@
 				INFOPLIST_FILE = SirenWIdget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SirenWIdget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1063,7 +1065,7 @@
 				INFOPLIST_FILE = SirenWIdget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SirenWIdget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

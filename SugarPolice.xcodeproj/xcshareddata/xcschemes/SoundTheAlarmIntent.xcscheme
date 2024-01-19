@@ -42,6 +42,30 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5BF753412AA1036700FF7A53"
+               BuildableName = "SugarPoliceUITests.xctest"
+               BlueprintName = "SugarPoliceUITests"
+               ReferencedContainer = "container:SugarPolice.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5BF753372AA1036700FF7A53"
+               BuildableName = "SugarPoliceTests.xctest"
+               BlueprintName = "SugarPoliceTests"
+               ReferencedContainer = "container:SugarPolice.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

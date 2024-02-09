@@ -12,29 +12,27 @@ struct SirenView: View {
     @EnvironmentObject var messageManager: MessageManager
   
     var body: some View {
-        ZStack {
-            BackgroundGradient()
-            Text(messageManager.currentMessage)
-                .foregroundColor(.white)
-                .font(.system(size: 100))
+            ZStack {
+                BackgroundGradient()
+                Text(messageManager.currentMessage)
+                    .foregroundColor(.white)
+                    .font(.system(size: 300))
+                    .minimumScaleFactor(0.2)
             }
-        .onTapGesture {
-            messageManager.showingSheet = true
-        }
-        .onAppear {
-            startBackgroundSound()
-        }
-        .sheet(isPresented: $messageManager.showingSheet){
-            SetupView()
-        }
-    }
-    
-    
+            
+            .onTapGesture {
+                messageManager.showingSheet = true
+            }
+            .onAppear {
+                startBackgroundSound()
+            }
+            .sheet(isPresented: $messageManager.showingSheet){
+                SetupView()
+            }
+        } 
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        SirenView()
-            .environmentObject(MessageManager())
-    }
+#Preview {
+    SirenView()
+        .environmentObject(MessageManager())
 }

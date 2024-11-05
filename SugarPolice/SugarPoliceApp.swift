@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct SugarPoliceApp: App {
@@ -24,5 +25,8 @@ struct SugarPoliceApp: App {
                     }
                 }
         }
+    }
+    init() {
+        try? Tips.configure([.displayFrequency(.immediate), .datastoreLocation(.applicationDefault)])
     }
 }

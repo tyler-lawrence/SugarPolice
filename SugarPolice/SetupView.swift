@@ -11,12 +11,11 @@ struct SetupView: View {
     
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var messageManager: MessageManager
-//    @State private var message: String = ""
     @AppStorage(MessageManager.currentMessageKey) private var message: String = ""
     
     var body: some View {
         
-        #if os(watchOS)
+    #if os(watchOS)
         watchLayout
             .onAppear{
                 stopBackgroundSound()
@@ -26,7 +25,7 @@ struct SetupView: View {
                 startBackgroundSound()
             }
         
-        #else
+    #else
         phoneLayout
             .onAppear{
                 stopBackgroundSound()
@@ -35,7 +34,7 @@ struct SetupView: View {
             .onDisappear{
                 startBackgroundSound()
             }
-        #endif
+    #endif
     }
     
     var watchLayout: some View {
@@ -65,6 +64,20 @@ struct SetupView: View {
     
     var phoneLayout: some View {
         VStack {
+            HStack {
+                Spacer()
+                Link(
+                    destination: URL(string: "https://www.icloud.com/shortcuts/badf0627de8a4b1bbe29c755c2fc41f0")!,
+                    label: {
+                        HStack(spacing: 0) {
+                            Image(systemName: "square.2.layers.3d.fill")
+                            Text("get the shortcut")
+                                .padding()
+                        }
+                        
+                    }
+                )
+            }
             Spacer()
             TextField("Report a new infraction", text: $message)
                 .font(.largeTitle)
@@ -96,6 +109,8 @@ struct SetupView: View {
                 }
             }
         }
+        .padding()
+        
     }
 }
 

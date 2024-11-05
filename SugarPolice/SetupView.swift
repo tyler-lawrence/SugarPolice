@@ -11,7 +11,8 @@ struct SetupView: View {
     
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var messageManager: MessageManager
-    @State private var message: String = ""
+//    @State private var message: String = ""
+    @AppStorage(MessageManager.currentMessageKey) private var message: String = ""
     
     var body: some View {
         
@@ -64,27 +65,41 @@ struct SetupView: View {
     
     var phoneLayout: some View {
         VStack {
-            TextField("Write an infraction", text: $message)
+            Spacer()
+            TextField("Report a new infraction", text: $message)
                 .font(.largeTitle)
                 .padding()
-            Picker("Previous infractions", selection: $message) {
-                ForEach(messageManager.messages, id:\.self) { m in
-                    Text(m)
+            Divider()
+            HStack {
+                Text("Repeat offenses:")
+                    .font(.title)
+                Picker("Previous infractions", selection: $message) {
+                    ForEach(messageManager.messages, id:\.self) { m in
+                        Text(m)
+                            .lineLimit(1)
+                    }
                 }
             }
-            Button("Sound the alarm") {
-                messageManager.updateCurrentMessage(message)
-                messageManager.hideSheet()
-                dismiss()
+            Spacer()
+            HStack(spacing: 20) {
+                Button("🚨Sound the alarm") {
+                    messageManager.updateCurrentMessage(message)
+                    messageManager.hideSheet()
+                    dismiss()
+                }
+                .buttonStyle(.borderedProminent)
+                .disabled(message.isEmpty)
+                
+                Button("Dismiss") {
+                    messageManager.hideSheet()
+                    dismiss()
+                }
             }
-            .buttonStyle(.borderedProminent)
-            .disabled(message.isEmpty)
-            
         }
     }
 }
 
 #Preview{
     SetupView()
-        .environmentObject(MessageManager())
+        .environmentObject(MessageManager.testMessageManager)
 }

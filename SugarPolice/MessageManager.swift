@@ -63,8 +63,12 @@ class MessageManager: ObservableObject {
     
 }
 
-//#if DEBUG
-//extension MessageManager {
-//    static let testMessageManager = MessageManager()
-//}
-//#endif
+#if DEBUG
+extension MessageManager {
+    static var testMessageManager: MessageManager {
+        let messageManager = MessageManager()
+        messageManager.currentMessage = "this is a big sugar infraction this is a big sugar infraction"
+        return messageManager
+    }
+}
+#endif

@@ -10,16 +10,15 @@ import SwiftUI
 struct SirenView: View {
     
     @EnvironmentObject var messageManager: MessageManager
-  
+    
     var body: some View {
-            ZStack {
-                BackgroundGradient()
+        BackgroundGradient()
+            .overlay{
                 Text(messageManager.currentMessage)
-                    .foregroundColor(.white)
-                    .font(.system(size: 300))
+                    .font(.system(size: 200))
                     .minimumScaleFactor(0.2)
+                    .foregroundStyle(.white)
             }
-            
             .onTapGesture {
                 messageManager.showingSheet = true
             }
@@ -29,10 +28,10 @@ struct SirenView: View {
             .sheet(isPresented: $messageManager.showingSheet){
                 SetupView()
             }
-        } 
+    }
 }
 
 #Preview {
     SirenView()
-        .environmentObject(MessageManager())
+        .environmentObject(MessageManager.testMessageManager)
 }

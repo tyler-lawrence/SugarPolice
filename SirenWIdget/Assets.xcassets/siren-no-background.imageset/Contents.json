@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "siren-no-background.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "widget@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

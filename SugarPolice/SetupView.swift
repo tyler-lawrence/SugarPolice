@@ -29,6 +29,7 @@ struct SetupView: View {
         phoneLayout
             .onAppear{
                 stopBackgroundSound()
+                message = ""
                 messageManager.loadMessages()
             }
             .onDisappear{
@@ -42,7 +43,7 @@ struct SetupView: View {
             
             VStack{
                 TextField("Write an infraction", text: $message)
-                    .font(.largeTitle)
+                    .font(.title2)
                     .padding()
                 Button("Sound the alarm") {
                     messageManager.updateCurrentMessage(message)
@@ -63,53 +64,46 @@ struct SetupView: View {
     }
     
     var phoneLayout: some View {
-        VStack {
-            HStack {
+        NavigationStack {
+            VStack {
                 Spacer()
-                Link(
-                    destination: URL(string: "https://www.icloud.com/shortcuts/badf0627de8a4b1bbe29c755c2fc41f0")!,
-                    label: {
-                        HStack(spacing: 0) {
-                            Image(systemName: "square.2.layers.3d.fill")
-                            Text("get the shortcut")
-                                .padding()
-                        }
-                        
+                TextField("Report a new infraction", text: $message)
+                    .font(.largeTitle)
+                    .padding()
+                Divider()
+                NavigationLink{
+                    PreviousInfractionsView(selectedMessage: $message)
+                        .environmentObject(messageManager)
+                } label: {
+                    HStack{
+                        Text("Previous Infractions")
+                        Image(systemName: "chevron.right")
                     }
-                )
-            }
-            Spacer()
-            TextField("Report a new infraction", text: $message)
-                .font(.largeTitle)
-                .padding()
-            Divider()
-            HStack {
-                Text("Repeat offenses:")
-                    .font(.title)
-                Picker("Previous infractions", selection: $message) {
-                    ForEach(messageManager.messages, id:\.self) { m in
-                        Text(m)
-                            .lineLimit(1)
+                }
+                Spacer()
+                HStack(spacing: 20) {
+                    Button("🚨Sound the alarm") {
+                        messageManager.updateCurrentMessage(message)
+                        messageManager.hideSheet()
+                        dismiss()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(message.isEmpty)
+                    
+                    Button("Dismiss") {
+                        messageManager.hideSheet()
+                        dismiss()
                     }
                 }
             }
-            Spacer()
-            HStack(spacing: 20) {
-                Button("🚨Sound the alarm") {
-                    messageManager.updateCurrentMessage(message)
-                    messageManager.hideSheet()
-                    dismiss()
-                }
-                .buttonStyle(.borderedProminent)
-                .disabled(message.isEmpty)
-                
-                Button("Dismiss") {
-                    messageManager.hideSheet()
-                    dismiss()
+            .padding()
+            .toolbar {
+                ToolbarItem {
+                    Link("Get the Shortcut", destination: URL(string: "https://www.icloud.com/shortcuts/87cf14058ae34d84a1c689ab50785764")!)
+
                 }
             }
         }
-        .padding()
         
     }
 }

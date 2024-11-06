@@ -39,6 +39,8 @@
 		5BBCE55C2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE55B2CDABC1400E42AF6 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (project_codegen, ); }; };
 		5BBCE55D2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE55B2CDABC1400E42AF6 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (project_codegen, ); }; };
 		5BBCE55E2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE55B2CDABC1400E42AF6 /* Intents.intentdefinition */; };
+		5BBCE5662CDBFA5C00E42AF6 /* PreviousInfractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */; };
+		5BBCE5672CDBFB0700E42AF6 /* PreviousInfractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */; };
 		5BF7532B2AA1036600FF7A53 /* SugarPoliceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */; };
 		5BF7532D2AA1036600FF7A53 /* SirenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532C2AA1036600FF7A53 /* SirenView.swift */; };
 		5BF7532F2AA1036700FF7A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF7532E2AA1036700FF7A53 /* Assets.xcassets */; };
@@ -153,6 +155,7 @@
 		5BBCE55A2CDABC1400E42AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
 		5BBCE5602CDABC2300E42AF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Intents.strings; sourceTree = "<group>"; };
 		5BBCE5642CDABD9C00E42AF6 /* SoundTheAlarmIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundTheAlarmIntent.entitlements; sourceTree = "<group>"; };
+		5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousInfractionsView.swift; sourceTree = "<group>"; };
 		5BF753272AA1036600FF7A53 /* SugarPolice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarPolice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPoliceApp.swift; sourceTree = "<group>"; };
 		5BF7532C2AA1036600FF7A53 /* SirenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenView.swift; sourceTree = "<group>"; };
@@ -309,6 +312,7 @@
 				5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */,
 				5BF7532C2AA1036600FF7A53 /* SirenView.swift */,
 				5B8386462CDA685200020D5A /* MessageSetupTip.swift */,
+				5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */,
 				5BF753772AA270B400FF7A53 /* SetupView.swift */,
 				5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */,
 				5B19B17F2AB13E5900319B59 /* MessageManager.swift */,
@@ -645,6 +649,7 @@
 			files = (
 				5B460B5A2B48AC5F0030F76A /* SirenView.swift in Sources */,
 				5B8BC6FE2B5AC1700053DC49 /* IntentHandler.swift in Sources */,
+				5BBCE5672CDBFB0700E42AF6 /* PreviousInfractionsView.swift in Sources */,
 				5B460B5C2B48AC5F0030F76A /* BackgroundGradient.swift in Sources */,
 				5B8386482CDA685200020D5A /* MessageSetupTip.swift in Sources */,
 				5B460B552B48AC5F0030F76A /* MessageManager.swift in Sources */,
@@ -662,6 +667,7 @@
 			files = (
 				5BBCE55C2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */,
 				5BF7532D2AA1036600FF7A53 /* SirenView.swift in Sources */,
+				5BBCE5662CDBFA5C00E42AF6 /* PreviousInfractionsView.swift in Sources */,
 				5B212DB72AC87060009A3D53 /* BackgroundGradient.swift in Sources */,
 				5B8386472CDA685200020D5A /* MessageSetupTip.swift in Sources */,
 				5BF7532B2AA1036600FF7A53 /* SugarPoliceApp.swift in Sources */,

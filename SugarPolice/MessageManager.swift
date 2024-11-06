@@ -55,10 +55,20 @@ class MessageManager: ObservableObject {
         defaults.set(priorMessages, forKey: MessageManager.previousMessagesKey)
     }
     
-    func loadMessages()  {
+    func saveMessages() {
+        guard let defaults = defaults else { return }
+        defaults.set(messages, forKey: MessageManager.previousMessagesKey)
+    }
+    
+    func loadMessages() {
         guard let defaults = defaults else { return }
         let priorMessages: [String] = defaults.array(forKey: MessageManager.previousMessagesKey) as? [String] ?? [String]()
         self.messages = priorMessages
+    }
+    
+    func removeMessage(at offsets: IndexSet) {
+        messages.remove(atOffsets: offsets)
+        saveMessages()
     }
     
 }

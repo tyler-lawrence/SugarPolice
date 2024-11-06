@@ -33,6 +33,7 @@ struct PreviousInfractionsView: View {
                 }
                 .foregroundStyle(.primary)
             }
+            .onDelete(perform: messageManager.removeMessage(at:))
         }
         .onDisappear {
             if selection != nil {

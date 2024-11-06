@@ -68,7 +68,7 @@ struct SetupView: View {
             VStack {
                 Spacer()
                 TextField("Report a new infraction", text: $message)
-                    .font(.largeTitle)
+                    .font(.title2)
                     .padding()
                 Divider()
                 NavigationLink{

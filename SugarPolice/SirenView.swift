@@ -22,6 +22,7 @@ struct SirenView: View {
                         .minimumScaleFactor(0.2)
                         .foregroundStyle(.white)
                 }
+                .padding()
             }
             .onTapGesture {
                 messageManager.showingSheet = true

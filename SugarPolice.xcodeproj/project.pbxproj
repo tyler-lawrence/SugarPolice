@@ -18,29 +18,13 @@
 		5B1BB6BA2AA7F15C001C68A3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BB69A2AA7ED85001C68A3 /* IntentHandler.swift */; };
 		5B212DB72AC87060009A3D53 /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */; };
 		5B460B3D2B48A6F70030F76A /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */; };
-		5B460B472B48ABE70030F76A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B460B462B48ABE70030F76A /* ContentView.swift */; };
-		5B460B492B48ABE90030F76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B460B482B48ABE90030F76A /* Assets.xcassets */; };
-		5B460B4C2B48ABE90030F76A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B460B4B2B48ABE90030F76A /* Preview Assets.xcassets */; };
-		5B460B4F2B48ABE90030F76A /* SugarPoliceWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5B460B422B48ABE70030F76A /* SugarPoliceWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5B460B552B48AC5F0030F76A /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19B17F2AB13E5900319B59 /* MessageManager.swift */; };
-		5B460B562B48AC5F0030F76A /* siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5BF753592AA108AA00FF7A53 /* siren.mp3 */; };
-		5B460B572B48AC5F0030F76A /* SugarPoliceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */; };
-		5B460B582B48AC5F0030F76A /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF753552AA1082F00FF7A53 /* AudioPlayer.swift */; };
-		5B460B592B48AC5F0030F76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF7532E2AA1036700FF7A53 /* Assets.xcassets */; };
-		5B460B5A2B48AC5F0030F76A /* SirenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532C2AA1036600FF7A53 /* SirenView.swift */; };
-		5B460B5B2B48AC5F0030F76A /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF753772AA270B400FF7A53 /* SetupView.swift */; };
-		5B460B5C2B48AC5F0030F76A /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */; };
 		5B59A6BE2CDAAA7400CF30C6 /* AlarmWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B59A6BD2CDAAA7400CF30C6 /* AlarmWidgetExtension.swift */; };
 		5B59A6C22CDAABE000CF30C6 /* AlarmWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B59A6C12CDAABE000CF30C6 /* AlarmWidget.swift */; };
 		5B8386472CDA685200020D5A /* MessageSetupTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8386462CDA685200020D5A /* MessageSetupTip.swift */; };
-		5B8386482CDA685200020D5A /* MessageSetupTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8386462CDA685200020D5A /* MessageSetupTip.swift */; };
-		5B8BC6FE2B5AC1700053DC49 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BB69A2AA7ED85001C68A3 /* IntentHandler.swift */; };
 		5BB4047D2ACB459000C2468F /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19B17F2AB13E5900319B59 /* MessageManager.swift */; };
 		5BBCE55C2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE55B2CDABC1400E42AF6 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (project_codegen, ); }; };
 		5BBCE55D2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE55B2CDABC1400E42AF6 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (project_codegen, ); }; };
-		5BBCE55E2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE55B2CDABC1400E42AF6 /* Intents.intentdefinition */; };
 		5BBCE5662CDBFA5C00E42AF6 /* PreviousInfractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */; };
-		5BBCE5672CDBFB0700E42AF6 /* PreviousInfractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */; };
 		5BF7532B2AA1036600FF7A53 /* SugarPoliceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */; };
 		5BF7532D2AA1036600FF7A53 /* SirenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532C2AA1036600FF7A53 /* SirenView.swift */; };
 		5BF7532F2AA1036700FF7A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF7532E2AA1036700FF7A53 /* Assets.xcassets */; };
@@ -68,20 +52,6 @@
 			remoteInfo = SoundTheAlarmIntentUI;
 		};
 		5B1BB6AD2AA7ED86001C68A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BF7531F2AA1036600FF7A53 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1BB6962AA7ED85001C68A3;
-			remoteInfo = SoundTheAlarmIntent;
-		};
-		5B460B4D2B48ABE90030F76A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BF7531F2AA1036600FF7A53 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B460B412B48ABE70030F76A;
-			remoteInfo = "WatchSugarPolice Watch App";
-		};
-		5BBCE5752CDC13A100E42AF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BF7531F2AA1036600FF7A53 /* Project object */;
 			proxyType = 1;
@@ -118,7 +88,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				5B460B4F2B48ABE90030F76A /* SugarPoliceWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,15 +119,10 @@
 		5B1BB6A72AA7ED86001C68A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5B1BB6A92AA7ED86001C68A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
-		5B460B422B48ABE70030F76A /* SugarPoliceWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarPoliceWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B460B462B48ABE70030F76A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5B460B482B48ABE90030F76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5B460B4B2B48ABE90030F76A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B4921AA2ACDD6F700C005A5 /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		5B59A6BD2CDAAA7400CF30C6 /* AlarmWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmWidgetExtension.swift; sourceTree = "<group>"; };
 		5B59A6C12CDAABE000CF30C6 /* AlarmWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmWidget.swift; sourceTree = "<group>"; };
 		5B8386462CDA685200020D5A /* MessageSetupTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSetupTip.swift; sourceTree = "<group>"; };
-		5BBCE5592CDABB0D00E42AF6 /* WatchSugarPolice-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WatchSugarPolice-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5BBCE55A2CDABC1400E42AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
 		5BBCE5602CDABC2300E42AF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Intents.strings; sourceTree = "<group>"; };
 		5BBCE5642CDABD9C00E42AF6 /* SoundTheAlarmIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundTheAlarmIntent.entitlements; sourceTree = "<group>"; };
@@ -200,13 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B1BB6A22AA7ED86001C68A3 /* IntentsUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B460B3F2B48ABE70030F76A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,25 +220,6 @@
 			path = SoundTheAlarmIntentUI;
 			sourceTree = "<group>";
 		};
-		5B460B432B48ABE70030F76A /* WatchSugarPolice Watch App */ = {
-			isa = PBXGroup;
-			children = (
-				5BBCE5592CDABB0D00E42AF6 /* WatchSugarPolice-Watch-App-Info.plist */,
-				5B460B462B48ABE70030F76A /* ContentView.swift */,
-				5B460B482B48ABE90030F76A /* Assets.xcassets */,
-				5B460B4A2B48ABE90030F76A /* Preview Content */,
-			);
-			path = "WatchSugarPolice Watch App";
-			sourceTree = "<group>";
-		};
-		5B460B4A2B48ABE90030F76A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				5B460B4B2B48ABE90030F76A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		5BF7531E2AA1036600FF7A53 = {
 			isa = PBXGroup;
 			children = (
@@ -291,7 +229,6 @@
 				5BF753652AA10BCA00FF7A53 /* SirenWIdget */,
 				5B1BB6992AA7ED85001C68A3 /* SoundTheAlarmIntent */,
 				5B1BB6A32AA7ED86001C68A3 /* SoundTheAlarmIntentUI */,
-				5B460B432B48ABE70030F76A /* WatchSugarPolice Watch App */,
 				5BF753602AA10BC900FF7A53 /* Frameworks */,
 				5BF753282AA1036600FF7A53 /* Products */,
 			);
@@ -306,7 +243,6 @@
 				5BF7535F2AA10BC900FF7A53 /* SirenWIdgetExtension.appex */,
 				5B1BB6972AA7ED85001C68A3 /* SoundTheAlarmIntent.appex */,
 				5B1BB6A12AA7ED86001C68A3 /* SoundTheAlarmIntentUI.appex */,
-				5B460B422B48ABE70030F76A /* SugarPoliceWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -418,24 +354,6 @@
 			productReference = 5B1BB6A12AA7ED86001C68A3 /* SoundTheAlarmIntentUI.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		5B460B412B48ABE70030F76A /* SugarPoliceWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B460B502B48ABE90030F76A /* Build configuration list for PBXNativeTarget "SugarPoliceWatch" */;
-			buildPhases = (
-				5B460B3E2B48ABE70030F76A /* Sources */,
-				5B460B3F2B48ABE70030F76A /* Frameworks */,
-				5B460B402B48ABE70030F76A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BBCE5762CDC13A100E42AF6 /* PBXTargetDependency */,
-			);
-			name = SugarPoliceWatch;
-			productName = "WatchSugarPolice Watch App";
-			productReference = 5B460B422B48ABE70030F76A /* SugarPoliceWatch.app */;
-			productType = "com.apple.product-type.application";
-		};
 		5BF753262AA1036600FF7A53 /* SugarPolice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BF7534C2AA1036700FF7A53 /* Build configuration list for PBXNativeTarget "SugarPolice" */;
@@ -452,7 +370,6 @@
 				5BF753712AA10BCB00FF7A53 /* PBXTargetDependency */,
 				5B1BB6AB2AA7ED86001C68A3 /* PBXTargetDependency */,
 				5B1BB6AE2AA7ED86001C68A3 /* PBXTargetDependency */,
-				5B460B4E2B48ABE90030F76A /* PBXTargetDependency */,
 			);
 			name = SugarPolice;
 			productName = SugarPolice;
@@ -528,9 +445,6 @@
 					5B1BB6A02AA7ED86001C68A3 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
-					5B460B412B48ABE70030F76A = {
-						CreatedOnToolsVersion = 15.1;
-					};
 					5BF753262AA1036600FF7A53 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -566,7 +480,6 @@
 				5BF7535E2AA10BC900FF7A53 /* SirenWIdgetExtension */,
 				5B1BB6962AA7ED85001C68A3 /* SoundTheAlarmIntent */,
 				5B1BB6A02AA7ED86001C68A3 /* SoundTheAlarmIntentUI */,
-				5B460B412B48ABE70030F76A /* SugarPoliceWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -584,17 +497,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B1BB6A82AA7ED86001C68A3 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B460B402B48ABE70030F76A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B460B4C2B48ABE90030F76A /* Preview Assets.xcassets in Resources */,
-				5B460B562B48AC5F0030F76A /* siren.mp3 in Resources */,
-				5B460B592B48AC5F0030F76A /* Assets.xcassets in Resources */,
-				5B460B492B48ABE90030F76A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,24 +550,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B1BB6A52AA7ED86001C68A3 /* IntentViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B460B3E2B48ABE70030F76A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B460B5A2B48AC5F0030F76A /* SirenView.swift in Sources */,
-				5B8BC6FE2B5AC1700053DC49 /* IntentHandler.swift in Sources */,
-				5BBCE5672CDBFB0700E42AF6 /* PreviousInfractionsView.swift in Sources */,
-				5B460B5C2B48AC5F0030F76A /* BackgroundGradient.swift in Sources */,
-				5B8386482CDA685200020D5A /* MessageSetupTip.swift in Sources */,
-				5B460B552B48AC5F0030F76A /* MessageManager.swift in Sources */,
-				5BBCE55E2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */,
-				5B460B5B2B48AC5F0030F76A /* SetupView.swift in Sources */,
-				5B460B582B48AC5F0030F76A /* AudioPlayer.swift in Sources */,
-				5B460B572B48AC5F0030F76A /* SugarPoliceApp.swift in Sources */,
-				5B460B472B48ABE70030F76A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,16 +611,6 @@
 			isa = PBXTargetDependency;
 			target = 5B1BB6962AA7ED85001C68A3 /* SoundTheAlarmIntent */;
 			targetProxy = 5B1BB6AD2AA7ED86001C68A3 /* PBXContainerItemProxy */;
-		};
-		5B460B4E2B48ABE90030F76A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B460B412B48ABE70030F76A /* SugarPoliceWatch */;
-			targetProxy = 5B460B4D2B48ABE90030F76A /* PBXContainerItemProxy */;
-		};
-		5BBCE5762CDC13A100E42AF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1BB6962AA7ED85001C68A3 /* SoundTheAlarmIntent */;
-			targetProxy = 5BBCE5752CDC13A100E42AF6 /* PBXContainerItemProxy */;
 		};
 		5BF7533A2AA1036700FF7A53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -893,82 +767,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5B460B512B48ABE90030F76A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchSugarPolice Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 2PF4YUG536;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WatchSugarPolice-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Infraction Siren";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.academy.SugarPolice;
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.SugarPolice.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.6;
-			};
-			name = Debug;
-		};
-		5B460B522B48ABE90030F76A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchSugarPolice Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 2PF4YUG536;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WatchSugarPolice-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Infraction Siren";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.academy.SugarPolice;
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.SugarPolice.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
 		};
@@ -1333,15 +1131,6 @@
 			buildConfigurations = (
 				5B1BB6B42AA7ED86001C68A3 /* Debug */,
 				5B1BB6B52AA7ED86001C68A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B460B502B48ABE90030F76A /* Build configuration list for PBXNativeTarget "SugarPoliceWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B460B512B48ABE90030F76A /* Debug */,
-				5B460B522B48ABE90030F76A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

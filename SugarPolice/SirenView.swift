@@ -32,6 +32,7 @@ struct SirenView: View {
             }
             .sheet(isPresented: $messageManager.showingSheet){
                 SetupView()
+                    .presentationDetents([.medium])
             }
     }
 }

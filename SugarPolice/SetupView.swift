@@ -41,6 +41,7 @@ struct SetupView: View {
     var watchLayout: some View {
         TabView{
             
+            // tab 1
             VStack{
                 TextField("Write an infraction", text: $message)
                     .font(.title2)
@@ -52,6 +53,7 @@ struct SetupView: View {
                 }
             }
             
+            // tab 2
             Picker("Previous infractions", selection: $message) {
                 ForEach(messageManager.messages, id:\.self) { m in
                     Text(m)
@@ -60,6 +62,7 @@ struct SetupView: View {
             .onDisappear{
                 messageManager.currentMessage = message
             }
+            
         }
     }
     

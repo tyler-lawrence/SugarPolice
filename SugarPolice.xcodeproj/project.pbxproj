@@ -81,6 +81,13 @@
 			remoteGlobalIDString = 5B460B412B48ABE70030F76A;
 			remoteInfo = "WatchSugarPolice Watch App";
 		};
+		5BBCE5752CDC13A100E42AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BF7531F2AA1036600FF7A53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1BB6962AA7ED85001C68A3;
+			remoteInfo = SoundTheAlarmIntent;
+		};
 		5BF753392AA1036700FF7A53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BF7531F2AA1036600FF7A53 /* Project object */;
@@ -422,6 +429,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5BBCE5762CDC13A100E42AF6 /* PBXTargetDependency */,
 			);
 			name = SugarPoliceWatch;
 			productName = "WatchSugarPolice Watch App";
@@ -725,6 +733,11 @@
 			target = 5B460B412B48ABE70030F76A /* SugarPoliceWatch */;
 			targetProxy = 5B460B4D2B48ABE90030F76A /* PBXContainerItemProxy */;
 		};
+		5BBCE5762CDC13A100E42AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1BB6962AA7ED85001C68A3 /* SoundTheAlarmIntent */;
+			targetProxy = 5BBCE5752CDC13A100E42AF6 /* PBXContainerItemProxy */;
+		};
 		5BF7533A2AA1036700FF7A53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5BF753262AA1036600FF7A53 /* SugarPolice */;
@@ -889,7 +902,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchSugarPolice Watch App/Preview Content\"";
@@ -899,7 +912,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchSugarPolice-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = WatchSugarPolice;
+				INFOPLIST_KEY_CFBundleDisplayName = "Infraction Siren";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.academy.SugarPolice;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
@@ -927,7 +940,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchSugarPolice Watch App/Preview Content\"";
@@ -937,7 +950,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchSugarPolice-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = WatchSugarPolice;
+				INFOPLIST_KEY_CFBundleDisplayName = "Infraction Siren";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.academy.SugarPolice;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
@@ -1074,6 +1087,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = SugarPolice/SugarPolice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
@@ -1116,6 +1130,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = SugarPolice/SugarPolice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;

@@ -34,9 +34,9 @@ class SoundTheAlarmHandler: NSObject, SoundTheAlarmIntentHandling {
     func handle(intent: SoundTheAlarmIntent, completion: @escaping (SoundTheAlarmIntentResponse) -> Void) {
     
        if let crime = intent.crime {
+           completion(SoundTheAlarmIntentResponse.success(crime: crime))
            messageManager.updateCurrentMessage(crime)
            messageManager.hideSheet()
-           completion(SoundTheAlarmIntentResponse.success(crime: crime))
        }
     }
     

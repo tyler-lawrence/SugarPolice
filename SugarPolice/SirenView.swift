@@ -6,20 +6,24 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct SirenView: View {
     
     @EnvironmentObject var messageManager: MessageManager
-  
+    let messageSetupTip = MessageSetupTip()
     var body: some View {
-            ZStack {
-                BackgroundGradient()
-                Text(messageManager.currentMessage)
-                    .foregroundColor(.white)
-                    .font(.system(size: 300))
-                    .minimumScaleFactor(0.2)
+        BackgroundGradient()
+            .overlay{
+                VStack {
+                    TipView(messageSetupTip, arrowEdge: .top)
+                    Text(messageManager.currentMessage)
+                        .font(.system(size: 200))
+                        .minimumScaleFactor(0.2)
+                        .foregroundStyle(.white)
+                }
+                .padding()
             }
-            
             .onTapGesture {
                 messageManager.showingSheet = true
             }
@@ -29,10 +33,10 @@ struct SirenView: View {
             .sheet(isPresented: $messageManager.showingSheet){
                 SetupView()
             }
-        } 
+    }
 }
 
 #Preview {
     SirenView()
-        .environmentObject(MessageManager())
+        .environmentObject(MessageManager.testMessageManager)
 }

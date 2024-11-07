@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct SugarPoliceApp: App {
@@ -17,12 +18,15 @@ struct SugarPoliceApp: App {
         WindowGroup {
             SirenView()
                 .environmentObject(messageManager)
-                .onChange(of: scenePhase){ newPhase in
+                .onChange(of: scenePhase){ _, newPhase in
                     if newPhase == .background{
                         messageManager.showingSheet = false
                         messageManager.hideSheet()
                     }
                 }
         }
+    }
+    init() {
+        try? Tips.configure([.displayFrequency(.immediate), .datastoreLocation(.applicationDefault)])
     }
 }

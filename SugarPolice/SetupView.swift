@@ -11,11 +11,11 @@ struct SetupView: View {
     
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var messageManager: MessageManager
-    @State private var message: String = ""
+    @AppStorage(MessageManager.currentMessageKey) private var message: String = ""
     
     var body: some View {
         
-        #if os(watchOS)
+    #if os(watchOS)
         watchLayout
             .onAppear{
                 stopBackgroundSound()
@@ -25,16 +25,17 @@ struct SetupView: View {
                 startBackgroundSound()
             }
         
-        #else
+    #else
         phoneLayout
             .onAppear{
                 stopBackgroundSound()
+                message = ""
                 messageManager.loadMessages()
             }
             .onDisappear{
                 startBackgroundSound()
             }
-        #endif
+    #endif
     }
     
     var watchLayout: some View {
@@ -42,7 +43,7 @@ struct SetupView: View {
             
             VStack{
                 TextField("Write an infraction", text: $message)
-                    .font(.largeTitle)
+                    .font(.title2)
                     .padding()
                 Button("Sound the alarm") {
                     messageManager.updateCurrentMessage(message)
@@ -63,28 +64,51 @@ struct SetupView: View {
     }
     
     var phoneLayout: some View {
-        VStack {
-            TextField("Write an infraction", text: $message)
-                .font(.largeTitle)
-                .padding()
-            Picker("Previous infractions", selection: $message) {
-                ForEach(messageManager.messages, id:\.self) { m in
-                    Text(m)
+        NavigationStack {
+            VStack {
+                Spacer()
+                TextField("Report a new infraction", text: $message)
+                    .font(.title2)
+                    .padding()
+                Divider()
+                NavigationLink{
+                    PreviousInfractionsView(selectedMessage: $message)
+                        .environmentObject(messageManager)
+                } label: {
+                    HStack{
+                        Text("Previous Infractions")
+                        Image(systemName: "chevron.right")
+                    }
+                }
+                Spacer()
+                HStack(spacing: 20) {
+                    Button("🚨Sound the alarm") {
+                        messageManager.updateCurrentMessage(message)
+                        messageManager.hideSheet()
+                        dismiss()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(message.isEmpty)
+                    
+                    Button("Dismiss") {
+                        messageManager.hideSheet()
+                        dismiss()
+                    }
                 }
             }
-            Button("Sound the alarm") {
-                messageManager.updateCurrentMessage(message)
-                messageManager.hideSheet()
-                dismiss()
+            .padding()
+            .toolbar {
+                ToolbarItem {
+                    Link("Get the Shortcut", destination: URL(string: "https://www.icloud.com/shortcuts/87cf14058ae34d84a1c689ab50785764")!)
+
+                }
             }
-            .buttonStyle(.borderedProminent)
-            .disabled(message.isEmpty)
-            
         }
+        
     }
 }
 
 #Preview{
     SetupView()
-        .environmentObject(MessageManager())
+        .environmentObject(MessageManager.testMessageManager)
 }

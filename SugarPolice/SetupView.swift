@@ -11,7 +11,7 @@ struct SetupView: View {
     
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var messageManager: MessageManager
-    @AppStorage(MessageManager.currentMessageKey) private var message: String = ""
+    @State var message: String = ""
     
     var body: some View {
         NavigationStack {
@@ -50,8 +50,13 @@ struct SetupView: View {
             .toolbar {
                 ToolbarItem {
                     Link("Get the Shortcut", destination: URL(string: "https://www.icloud.com/shortcuts/87cf14058ae34d84a1c689ab50785764")!)
-                    
                 }
+            }
+            .onAppear {
+                stopBackgroundSound()
+            }
+            .onDisappear {
+                startBackgroundSound()
             }
         }
     }

@@ -11,7 +11,7 @@ import TipKit
 @main
 struct SugarPoliceApp: App {
     
-    @StateObject var messageManager = MessageManager()
+    @StateObject var messageManager = MessageManager.shared
     @Environment(\.scenePhase) var scenePhase
     
     var body: some Scene {

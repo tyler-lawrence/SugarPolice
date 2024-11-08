@@ -7,10 +7,5 @@
 		<string>ConfigurationIntent</string>
 		<string>SoundTheAlarmIntent</string>
 	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Fonts/Zapfino.ttf</string>
-		<string>Fonts/Helvetica.ttc</string>
-	</array>
 </dict>
 </plist>

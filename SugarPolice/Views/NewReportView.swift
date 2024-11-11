@@ -14,7 +14,7 @@ struct NewReportView: View {
     var body: some View {
         VStack {
             Spacer()
-            TextField("Report a new infraction", text: $message)
+            TextField("Report a new infraction 🚓", text: $message)
                 .font(.title2)
                 .padding()
             Divider()

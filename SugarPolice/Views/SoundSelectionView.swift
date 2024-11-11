@@ -11,30 +11,18 @@ struct SoundSelectionView: View {
     
     @State var selection: String?
     
-    var soundNames: [String] {
-        guard let bundlePath = Bundle.main.resourcePath else { return [] }
-        do {
-            let typefaceDirectory = bundlePath + "/Sounds/"
-            let contents: [String] = try FileManager.default.contentsOfDirectory(atPath: typefaceDirectory)
-            
-            return contents.map{($0 as NSString).deletingPathExtension}
-        } catch {
-            print(error)
-        }
-        return []
-    }
     var body: some View {
         List {
-            ForEach(soundNames, id: \.self){ soundName in
+            ForEach(SirenSound.allCases, id: \.self){ soundName in
                 Button {
                     //TODO: play sound
-                    selection = soundName
-                    AudioManager.shared.setPreferredSound(to: soundName)
+                    selection = soundName.label
+                    AudioManager.shared.setPreferredSound(to: soundName.label)
                 } label: {
                     HStack {
-                        Text(soundName)
+                        Text(soundName.label)
                         Spacer()
-                        if selection == soundName {
+                        if selection == soundName.label {
                             Image(systemName: "checkmark")
                         }
                     }

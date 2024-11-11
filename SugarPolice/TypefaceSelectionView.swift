@@ -29,12 +29,8 @@ struct TypefaceSelectionView: View {
         List {
             ForEach(typefaceNames, id: \.self){ typefaceName in
                 Button {
-                    if selection == typefaceName {
-                        selection = nil
-                    } else {
-                        selection = typefaceName
-                        preferredTypeface = typefaceName
-                    }
+                    selection = typefaceName
+                    preferredTypeface = typefaceName
                 } label: {
                     HStack {
                         // TODO: update fixed size

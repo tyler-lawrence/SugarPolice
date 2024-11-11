@@ -13,17 +13,16 @@ class MessageManager: ObservableObject {
     static let shared = MessageManager()
     
     // MARK: - app storage keys
-    static let suiteName = "group.com.academy.SugarPolice"
     static let previousMessagesKey = "previousMessages"
     static let currentMessageKey = "currentMessage"
     static let showingSheetKey = "showingSheet"
     
-    let defaults = UserDefaults(suiteName: suiteName)
+    let defaults = UserDefaults(suiteName: AppStorageKey.suiteName)
     
     // MARK: - properties
     @Published var messages: [String] = [String]()
-    @AppStorage(currentMessageKey, store: UserDefaults(suiteName: suiteName)) var currentMessage: String = ""
-    @AppStorage(showingSheetKey, store: UserDefaults(suiteName: suiteName)) var showingSheet: Bool = false
+    @AppStorage(currentMessageKey, store: UserDefaults(suiteName: AppStorageKey.suiteName)) var currentMessage: String = ""
+    @AppStorage(showingSheetKey, store: UserDefaults(suiteName: AppStorageKey.suiteName)) var showingSheet: Bool = false
     
     // MARK: - Initialization
     init(){

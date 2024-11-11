@@ -14,7 +14,6 @@ struct SetupView: View {
         case customize
     }
     
-    
     @State var selectedSetup: Setup = .report
     
     var body: some View {
@@ -42,12 +41,7 @@ struct SetupView: View {
                 Link("Get the Shortcut", destination: URL(string: "https://www.icloud.com/shortcuts/87cf14058ae34d84a1c689ab50785764")!)
             }
         }
-        .onAppear {
-            stopBackgroundSound()
-        }
-        .onDisappear {
-            startBackgroundSound()
-        }
+       
     }
 }
 

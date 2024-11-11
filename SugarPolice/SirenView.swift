@@ -12,13 +12,15 @@ struct SirenView: View {
     
     @EnvironmentObject var messageManager: MessageManager
     let messageSetupTip = MessageSetupTip()
+    @AppStorage(AppStorageKey.preferredTypeface) var preferredTypeface: String = "Baskerville"
     var body: some View {
         BackgroundGradient()
             .overlay{
                 VStack {
                     TipView(messageSetupTip, arrowEdge: .top)
                     Text(messageManager.currentMessage)
-                        .font(.system(size: 200))
+                        .font(Font.custom(preferredTypeface, size: 200))
+                        .bold()
                         .minimumScaleFactor(0.2)
                         .foregroundStyle(.white)
                 }

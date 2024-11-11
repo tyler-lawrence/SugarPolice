@@ -25,6 +25,10 @@
 		5BBCE55C2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE55B2CDABC1400E42AF6 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (project_codegen, ); }; };
 		5BBCE55D2CDABC1400E42AF6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE55B2CDABC1400E42AF6 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (project_codegen, ); }; };
 		5BBCE5662CDBFA5C00E42AF6 /* PreviousInfractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */; };
+		5BBCE5952CDE665C00E42AF6 /* NewReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE5942CDE665C00E42AF6 /* NewReportView.swift */; };
+		5BBCE5972CDE666700E42AF6 /* SirenCustomizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE5962CDE666700E42AF6 /* SirenCustomizationView.swift */; };
+		5BBCE5992CDE976700E42AF6 /* AppStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCE5982CDE976700E42AF6 /* AppStorageKey.swift */; };
+		5BBCE5BE2CDEB83100E42AF6 /* Typefaces in Resources */ = {isa = PBXBuildFile; fileRef = 5BBCE5BD2CDEB81E00E42AF6 /* Typefaces */; };
 		5BF7532B2AA1036600FF7A53 /* SugarPoliceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */; };
 		5BF7532D2AA1036600FF7A53 /* SirenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7532C2AA1036600FF7A53 /* SirenView.swift */; };
 		5BF7532F2AA1036700FF7A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF7532E2AA1036700FF7A53 /* Assets.xcassets */; };
@@ -127,6 +131,10 @@
 		5BBCE5602CDABC2300E42AF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Intents.strings; sourceTree = "<group>"; };
 		5BBCE5642CDABD9C00E42AF6 /* SoundTheAlarmIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundTheAlarmIntent.entitlements; sourceTree = "<group>"; };
 		5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousInfractionsView.swift; sourceTree = "<group>"; };
+		5BBCE5942CDE665C00E42AF6 /* NewReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReportView.swift; sourceTree = "<group>"; };
+		5BBCE5962CDE666700E42AF6 /* SirenCustomizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenCustomizationView.swift; sourceTree = "<group>"; };
+		5BBCE5982CDE976700E42AF6 /* AppStorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageKey.swift; sourceTree = "<group>"; };
+		5BBCE5BD2CDEB81E00E42AF6 /* Typefaces */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Typefaces; sourceTree = "<group>"; };
 		5BF753272AA1036600FF7A53 /* SugarPolice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarPolice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7532A2AA1036600FF7A53 /* SugarPoliceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPoliceApp.swift; sourceTree = "<group>"; };
 		5BF7532C2AA1036600FF7A53 /* SirenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenView.swift; sourceTree = "<group>"; };
@@ -257,9 +265,13 @@
 				5B8386462CDA685200020D5A /* MessageSetupTip.swift */,
 				5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */,
 				5BF753772AA270B400FF7A53 /* SetupView.swift */,
+				5BBCE5942CDE665C00E42AF6 /* NewReportView.swift */,
+				5BBCE5962CDE666700E42AF6 /* SirenCustomizationView.swift */,
 				5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */,
 				5B19B17F2AB13E5900319B59 /* MessageManager.swift */,
+				5BBCE5982CDE976700E42AF6 /* AppStorageKey.swift */,
 				5BF753552AA1082F00FF7A53 /* AudioPlayer.swift */,
+				5BBCE5BD2CDEB81E00E42AF6 /* Typefaces */,
 				5BBCE55B2CDABC1400E42AF6 /* Intents.intentdefinition */,
 				5BF753592AA108AA00FF7A53 /* siren.mp3 */,
 				5BF7532E2AA1036700FF7A53 /* Assets.xcassets */,
@@ -505,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF7535A2AA108AA00FF7A53 /* siren.mp3 in Resources */,
+				5BBCE5BE2CDEB83100E42AF6 /* Typefaces in Resources */,
 				5BF753332AA1036700FF7A53 /* Preview Assets.xcassets in Resources */,
 				5BF7532F2AA1036700FF7A53 /* Assets.xcassets in Resources */,
 			);
@@ -564,9 +577,12 @@
 				5B8386472CDA685200020D5A /* MessageSetupTip.swift in Sources */,
 				5BF7532B2AA1036600FF7A53 /* SugarPoliceApp.swift in Sources */,
 				5BF7537A2AA3B94C00FF7A53 /* AlarmWidget.intentdefinition in Sources */,
+				5BBCE5952CDE665C00E42AF6 /* NewReportView.swift in Sources */,
 				5B1BB6BA2AA7F15C001C68A3 /* IntentHandler.swift in Sources */,
 				5BF753782AA270B400FF7A53 /* SetupView.swift in Sources */,
 				5BF753562AA1082F00FF7A53 /* AudioPlayer.swift in Sources */,
+				5BBCE5992CDE976700E42AF6 /* AppStorageKey.swift in Sources */,
+				5BBCE5972CDE666700E42AF6 /* SirenCustomizationView.swift in Sources */,
 				5B19B1802AB13E5900319B59 /* MessageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

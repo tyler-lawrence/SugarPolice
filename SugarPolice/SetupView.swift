@@ -9,44 +9,34 @@ import SwiftUI
 
 struct SetupView: View {
     
-    @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var messageManager: MessageManager
-    @State var message: String = ""
+    enum Setup: String, CaseIterable {
+        case report
+        case customize
+    }
+    
+    
+    @State var selectedSetup: Setup = .report
     
     var body: some View {
         NavigationStack {
             VStack {
-                Spacer()
-                TextField("Report a new infraction", text: $message)
-                    .font(.title2)
-                    .padding()
-                Divider()
-                NavigationLink{
-                    PreviousInfractionsView(selectedMessage: $message)
-                        .environmentObject(messageManager)
-                } label: {
-                    HStack{
-                        Text("Previous Infractions")
-                        Image(systemName: "chevron.right")
+                Picker("Setup", selection: $selectedSetup) {
+                    ForEach(Setup.allCases, id: \.self){
+                        Text($0.rawValue.capitalized)
                     }
                 }
+                .pickerStyle(.segmented)
                 Spacer()
-                HStack(spacing: 20) {
-                    Button("🚨Sound the alarm") {
-                        messageManager.updateCurrentMessage(message)
-                        messageManager.hideSheet()
-                        dismiss()
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .disabled(message.isEmpty)
-                    
-                    Button("Dismiss") {
-                        messageManager.hideSheet()
-                        dismiss()
-                    }
+                switch selectedSetup {
+                case .report:
+                    NewReportView()
+                case .customize:
+                    SirenCustomizationView()
                 }
+                Spacer()
             }
             .padding()
+        }
             .toolbar {
                 ToolbarItem {
                     Link("Get the Shortcut", destination: URL(string: "https://www.icloud.com/shortcuts/87cf14058ae34d84a1c689ab50785764")!)
@@ -60,7 +50,7 @@ struct SetupView: View {
             }
         }
     }
-}
+
 
 #Preview{
     SetupView()

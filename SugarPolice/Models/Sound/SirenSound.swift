@@ -17,13 +17,13 @@ enum SirenSound: CaseIterable {
     var label: String {
         switch self {
         case .siren:
-            "siren"
+            "Siren"
         case .euSiren:
-            "siren2"
+            "Siren2"
         case .warAlarm:
-            "alert"
+            "Alert"
         case .warningBuzzer:
-            "warning"
+            "Warning"
         }
     }
     

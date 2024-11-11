@@ -13,16 +13,17 @@ struct SoundSelectionView: View {
     
     var body: some View {
         List {
-            ForEach(SirenSound.allCases, id: \.self){ soundName in
+            ForEach(SirenSound.allCases, id: \.self){ sirenSound in
                 Button {
                     //TODO: play sound
-                    selection = soundName.label
-                    AudioManager.shared.setPreferredSound(to: soundName.label)
+                    selection = sirenSound.label
+                    AudioManager.shared.setPreferredSound(to: sirenSound.label)
                 } label: {
                     HStack {
-                        Text(soundName.label)
+                        Text(sirenSound.icon)
+                        Text(sirenSound.label)
                         Spacer()
-                        if selection == soundName.label {
+                        if selection == sirenSound.label {
                             Image(systemName: "checkmark")
                         }
                     }

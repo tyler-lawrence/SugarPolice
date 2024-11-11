@@ -7,5 +7,12 @@
 		<string>ConfigurationIntent</string>
 		<string>SoundTheAlarmIntent</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Typefaces/OldLondon.ttf</string>
+		<string>Typefaces/Halo Dek.ttf</string>
+		<string>Typefaces/Tightrope-Regular.ttf</string>
+		<string>Typefaces/Bubblegum.ttf</string>
+	</array>
 </dict>
 </plist>

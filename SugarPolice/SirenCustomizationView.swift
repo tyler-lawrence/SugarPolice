@@ -38,8 +38,9 @@ struct SirenCustomizationView: View {
                             }
                         } label: {
                             HStack {
+                                // TODO: update fixed size
                                 Text(typefaceName)
-                                    .font(Font.custom(typefaceName, size: 30))
+                                    .font(Font.custom(typefaceName, size: 20))
                                 Spacer()
                                 if selection == typefaceName {
                                     Image(systemName: "checkmark")

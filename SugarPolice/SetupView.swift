@@ -37,19 +37,19 @@ struct SetupView: View {
             }
             .padding()
         }
-            .toolbar {
-                ToolbarItem {
-                    Link("Get the Shortcut", destination: URL(string: "https://www.icloud.com/shortcuts/87cf14058ae34d84a1c689ab50785764")!)
-                }
-            }
-            .onAppear {
-                stopBackgroundSound()
-            }
-            .onDisappear {
-                startBackgroundSound()
+        .toolbar {
+            ToolbarItem {
+                Link("Get the Shortcut", destination: URL(string: "https://www.icloud.com/shortcuts/87cf14058ae34d84a1c689ab50785764")!)
             }
         }
+        .onAppear {
+            stopBackgroundSound()
+        }
+        .onDisappear {
+            startBackgroundSound()
+        }
     }
+}
 
 
 #Preview{

@@ -247,12 +247,12 @@
 		5BBCE5CD2CE29F9B00E42AF6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5BF753772AA270B400FF7A53 /* SetupView.swift */,
 				5BBCE5C12CE262E000E42AF6 /* SoundSelectionView.swift */,
 				5BBCE5962CDE666700E42AF6 /* SirenCustomizationView.swift */,
 				5BBCE5BF2CE262D900E42AF6 /* TypefaceSelectionView.swift */,
 				5B212DB62AC87060009A3D53 /* BackgroundGradient.swift */,
 				5BBCE5942CDE665C00E42AF6 /* NewReportView.swift */,
-				5BF753772AA270B400FF7A53 /* SetupView.swift */,
 				5BBCE5652CDBFA5C00E42AF6 /* PreviousInfractionsView.swift */,
 				5BF7532C2AA1036600FF7A53 /* SirenView.swift */,
 			);

@@ -44,6 +44,20 @@ class AudioManager {
         }
     }
 
+    func play(_ sound: SirenSound) {
+        guard let resourcePath = sound.path else { return }
+        let soundURL: NSURL = NSURL(fileURLWithPath: resourcePath)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL as URL)
+            try AVAudioSession.sharedInstance().setCategory(.playback)
+            guard let backgroundAudioPlayer = audioPlayer else { return }
+            backgroundAudioPlayer.prepareToPlay()
+            backgroundAudioPlayer.play()
+        } catch {
+            print(error)
+        }
+    }
+    
     /// stops the file associated with this audio player
     func stopBackgroundSound() {
         guard let backgroundAudioPlayer = audioPlayer else { return }

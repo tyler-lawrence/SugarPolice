@@ -16,6 +16,8 @@ struct SoundSelectionView: View {
             ForEach(SirenSound.allCases, id: \.self){ sirenSound in
                 Button {
                     //TODO: play sound
+                    AudioManager.shared.stopBackgroundSound()
+                    AudioManager.shared.play(sirenSound)
                     selection = sirenSound.label
                     AudioManager.shared.setPreferredSound(to: sirenSound.label)
                 } label: {
@@ -33,6 +35,9 @@ struct SoundSelectionView: View {
         }
         .onAppear {
             selection = AudioManager.shared.preferredSound
+        }
+        .onDisappear {
+            AudioManager.shared.stopBackgroundSound()
         }
     }
 }

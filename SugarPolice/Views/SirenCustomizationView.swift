@@ -32,7 +32,7 @@ struct SirenCustomizationView: View {
                         Image(systemName: "speaker.square")
                         Text("Sound")
                         Spacer()
-                        Text(AudioManager.shared.preferredSound)
+                        Text(AudioManager.shared.preferredSound.capitalized)
                             .foregroundStyle(.gray)
                             .padding(.trailing)
                     }

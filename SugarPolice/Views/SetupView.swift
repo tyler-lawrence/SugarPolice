@@ -25,6 +25,7 @@ struct SetupView: View {
                     }
                 }
                 .pickerStyle(.segmented)
+                .padding(.horizontal)
                 Spacer()
                 switch selectedSetup {
                 case .report:

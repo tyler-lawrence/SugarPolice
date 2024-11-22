@@ -23,6 +23,7 @@ struct NewReportView: View {
                 } label: {
                     Image(systemName: "xmark.circle")
                 }
+                .disabled(message.isEmpty)
             }
             Divider()
             NavigationLink{
@@ -53,6 +54,8 @@ struct NewReportView: View {
 }
 
 #Preview {
-    NewReportView()
-        .environmentObject(MessageManager.testMessageManager)
+    NavigationStack {
+        NewReportView()
+            .environmentObject(MessageManager.testMessageManager)
+    }
 }

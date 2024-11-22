@@ -77,6 +77,11 @@ extension MessageManager {
     static var testMessageManager: MessageManager {
         let messageManager = MessageManager()
         messageManager.currentMessage = "this is a big sugar infraction this is a big sugar infraction"
+        messageManager.messages = [
+            "sugar",
+            "didn't code",
+            "infraction"
+        ]
         return messageManager
     }
 }

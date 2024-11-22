@@ -8,5 +8,7 @@
 import Foundation
 
 enum AppStorageKey {
+    static let suiteName: String = "group.com.academy.SugarPolice"
     static let preferredTypeface: String = "preferredTypeface"
+    static let preferredSound: String = "preferredSound"
 }

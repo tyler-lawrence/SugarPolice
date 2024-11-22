@@ -16,12 +16,7 @@ struct PreviousInfractionsView: View {
         List {
             ForEach(messageManager.messages, id: \.self){ message in
                 Button {
-                    if selection == message {
-                        selection = nil
-                    } else {
-                        selection = message
-                        selectedMessage = message
-                    }
+                    toggleSelectedMessage(message)
                 } label: {
                     HStack {
                         Text(message)
@@ -42,6 +37,15 @@ struct PreviousInfractionsView: View {
             if selection != nil {
                 messageManager.updateCurrentMessage(selectedMessage)
             }
+        }
+    }
+    private func toggleSelectedMessage(_ message: String) {
+        if selection == message {
+            selection = nil
+        } else {
+            selection = message
+            selectedMessage = message
+            messageManager.updateCurrentMessage(selectedMessage)
         }
     }
 }

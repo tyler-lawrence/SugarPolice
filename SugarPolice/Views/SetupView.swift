@@ -14,9 +14,8 @@ struct SetupView: View {
         case customize
     }
     
-    
     @State var selectedSetup: Setup = .report
-    
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationStack {
             VStack {
@@ -26,6 +25,7 @@ struct SetupView: View {
                     }
                 }
                 .pickerStyle(.segmented)
+                .padding(.horizontal)
                 Spacer()
                 switch selectedSetup {
                 case .report:
@@ -35,21 +35,16 @@ struct SetupView: View {
                 }
                 Spacer()
             }
-            .padding()
-        }
             .toolbar {
                 ToolbarItem {
-                    Link("Get the Shortcut", destination: URL(string: "https://www.icloud.com/shortcuts/87cf14058ae34d84a1c689ab50785764")!)
+                    Button("Dismiss") {
+                        dismiss()
+                    }
                 }
-            }
-            .onAppear {
-                stopBackgroundSound()
-            }
-            .onDisappear {
-                startBackgroundSound()
             }
         }
     }
+}
 
 
 #Preview{

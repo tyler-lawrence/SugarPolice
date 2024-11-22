@@ -30,11 +30,17 @@ struct SirenView: View {
                 messageManager.showingSheet = true
             }
             .onAppear {
-                startBackgroundSound()
+                AudioManager.shared.startBackgroundSound()
             }
             .sheet(isPresented: $messageManager.showingSheet){
                 SetupView()
                     .presentationDetents([.medium])
+                    .onAppear {
+                        AudioManager.shared.stopBackgroundSound()
+                    }
+                    .onDisappear {
+                        AudioManager.shared.startBackgroundSound()
+                    }
             }
     }
 }

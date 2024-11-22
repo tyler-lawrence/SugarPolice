@@ -14,9 +14,17 @@ struct NewReportView: View {
     var body: some View {
         VStack {
             Spacer()
-            TextField("Report a new infraction", text: $message)
-                .font(.title2)
-                .padding()
+            HStack {
+                TextField("Report a new infraction 🚓", text: $message)
+                    .font(.title2)
+                    .padding()
+                Button {
+                    message = ""
+                } label: {
+                    Image(systemName: "xmark.circle")
+                }
+                .disabled(message.isEmpty)
+            }
             Divider()
             NavigationLink{
                 PreviousInfractionsView(selectedMessage: $message)
@@ -36,18 +44,18 @@ struct NewReportView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .disabled(message.isEmpty)
-                
-                Button("Dismiss") {
-                    messageManager.hideSheet()
-                    dismiss()
-                }
             }
         }
         .padding()
+        .onAppear {
+            message = messageManager.currentMessage
+        }
     }
 }
 
 #Preview {
-    NewReportView()
-        .environmentObject(MessageManager.testMessageManager)
+    NavigationStack {
+        NewReportView()
+            .environmentObject(MessageManager.testMessageManager)
+    }
 }

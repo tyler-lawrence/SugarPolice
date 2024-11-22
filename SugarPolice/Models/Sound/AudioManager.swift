@@ -16,7 +16,7 @@ class AudioManager {
     static let shared = AudioManager()
     
     let defaults = UserDefaults(suiteName: AppStorageKey.suiteName)
-    var preferredSound: String = "siren"
+    var preferredSound: String = "Siren"
     
     var audioPlayer: AVAudioPlayer?
     

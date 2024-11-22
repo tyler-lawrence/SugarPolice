@@ -10,5 +10,5 @@ import TipKit
 
 struct MessageSetupTip: Tip {
     var title: Text = Text("Customization")
-    var message: Text? = Text("Tap anywhere to customize your infraction")
+    var message: Text? = Text("Tap anywhere to customize your siren!")
 }

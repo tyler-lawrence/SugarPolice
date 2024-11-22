@@ -21,7 +21,7 @@ class MessageManager: ObservableObject {
     
     // MARK: - properties
     @Published var messages: [String] = [String]()
-    @AppStorage(currentMessageKey, store: UserDefaults(suiteName: AppStorageKey.suiteName)) var currentMessage: String = ""
+    @AppStorage(currentMessageKey, store: UserDefaults(suiteName: AppStorageKey.suiteName)) var currentMessage: String = "Code Red!"
     @AppStorage(showingSheetKey, store: UserDefaults(suiteName: AppStorageKey.suiteName)) var showingSheet: Bool = false
     
     // MARK: - Initialization

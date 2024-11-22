@@ -72,7 +72,7 @@ class AudioManager {
     
     func fetchPreferredSound() {
         guard let defaults else { return }
-        preferredSound = defaults.string(forKey: "preferredSound") ?? "siren"
+        preferredSound = defaults.string(forKey: "preferredSound") ?? "Siren"
     }
 }
 

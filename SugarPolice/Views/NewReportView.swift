@@ -43,11 +43,6 @@ struct NewReportView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .disabled(message.isEmpty)
-                
-                Button("Dismiss") {
-                    messageManager.hideSheet()
-                    dismiss()
-                }
             }
         }
         .padding()

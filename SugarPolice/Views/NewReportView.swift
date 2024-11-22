@@ -50,6 +50,9 @@ struct NewReportView: View {
         .onAppear {
             message = messageManager.currentMessage
         }
+        .onDisappear {
+            messageManager.updateCurrentMessage(message)
+        }
     }
 }
 

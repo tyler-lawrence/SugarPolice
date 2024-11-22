@@ -13,29 +13,34 @@ struct PreviousInfractionsView: View {
     @State var selection: String?
     
     var body: some View {
-        List {
-            ForEach(messageManager.messages, id: \.self){ message in
-                Button {
-                    toggleSelectedMessage(message)
-                } label: {
-                    HStack {
-                        Text(message)
-                        Spacer()
-                        if selection == message {
-                            Image(systemName: "checkmark")
+        
+        if messageManager.messages.isEmpty {
+            ContentUnavailableView("No previous infractions", systemImage: "megaphone")
+        } else {
+            List {
+                ForEach(messageManager.messages, id: \.self){ message in
+                    Button {
+                        toggleSelectedMessage(message)
+                    } label: {
+                        HStack {
+                            Text(message)
+                            Spacer()
+                            if selection == message {
+                                Image(systemName: "checkmark")
+                            }
                         }
                     }
+                    .foregroundStyle(.primary)
                 }
-                .foregroundStyle(.primary)
+                .onDelete(perform: messageManager.removeMessage(at:))
             }
-            .onDelete(perform: messageManager.removeMessage(at:))
-        }
-        .onAppear {
-            messageManager.loadMessages()
-        }
-        .onDisappear {
-            if selection != nil {
-                messageManager.updateCurrentMessage(selectedMessage)
+            .onAppear {
+                messageManager.loadMessages()
+            }
+            .onDisappear {
+                if selection != nil {
+                    messageManager.updateCurrentMessage(selectedMessage)
+                }
             }
         }
     }

@@ -12,30 +12,33 @@ struct SirenCustomizationView: View {
     
     var body: some View {
         Form {
-            NavigationLink {
-                TypefaceSelectionView()
-            } label: {
-                HStack {
-                    Image(systemName: "a.square")
-                    Text("Font")
-                    Spacer()
-                    Text(preferredTypeface)
-                        .foregroundStyle(.gray)
-                        .padding(.trailing)
+            Section {
+                NavigationLink {
+                    TypefaceSelectionView()
+                } label: {
+                    HStack {
+                        Image(systemName: "a.square")
+                        Text("Font")
+                        Spacer()
+                        Text(preferredTypeface)
+                            .foregroundStyle(.gray)
+                            .padding(.trailing)
+                    }
+                }
+                NavigationLink {
+                    SoundSelectionView()
+                } label: {
+                    HStack {
+                        Image(systemName: "speaker.square")
+                        Text("Sound")
+                        Spacer()
+                        Text(AudioManager.shared.preferredSound)
+                            .foregroundStyle(.gray)
+                            .padding(.trailing)
+                    }
                 }
             }
-            NavigationLink {
-                SoundSelectionView()
-            } label: {
-                HStack {
-                    Image(systemName: "speaker.square")
-                    Text("Sound")
-                    Spacer()
-                    Text(AudioManager.shared.preferredSound)
-                        .foregroundStyle(.gray)
-                        .padding(.trailing)
-                }
-            }
+            Link("Get the Shortcut", destination: URL(string: "https://www.icloud.com/shortcuts/87cf14058ae34d84a1c689ab50785764")!)
         }
     }
 }

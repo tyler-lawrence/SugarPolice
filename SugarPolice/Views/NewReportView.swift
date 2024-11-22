@@ -14,9 +14,16 @@ struct NewReportView: View {
     var body: some View {
         VStack {
             Spacer()
-            TextField("Report a new infraction 🚓", text: $message)
-                .font(.title2)
-                .padding()
+            HStack {
+                TextField("Report a new infraction 🚓", text: $message)
+                    .font(.title2)
+                    .padding()
+                Button {
+                    message = ""
+                } label: {
+                    Image(systemName: "xmark.circle")
+                }
+            }
             Divider()
             NavigationLink{
                 PreviousInfractionsView(selectedMessage: $message)
@@ -44,6 +51,9 @@ struct NewReportView: View {
             }
         }
         .padding()
+        .onAppear {
+            message = messageManager.currentMessage
+        }
     }
 }
 

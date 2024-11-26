@@ -52,6 +52,7 @@ class MessageManager: ObservableObject {
         
         priorMessages.append(message)
         defaults.set(priorMessages, forKey: MessageManager.previousMessagesKey)
+        loadMessages()
     }
     
     func saveMessages() {

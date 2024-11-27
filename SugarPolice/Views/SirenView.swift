@@ -19,10 +19,12 @@ struct SirenView: View {
                 VStack {
                     TipView(messageSetupTip, arrowEdge: .top)
                     Text(messageManager.currentMessage)
+                        .multilineTextAlignment(.center)
                         .font(Font.custom(preferredTypeface, size: 200))
                         .bold()
                         .minimumScaleFactor(0.2)
                         .foregroundStyle(.white)
+                        .shadow(radius: 2.0)
                 }
                 .padding()
             }
